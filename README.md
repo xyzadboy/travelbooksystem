@@ -1,59 +1,125 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="dok/homepage.jpeg" width="600" alt="Travel Booking System Banner">
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Laravel-Framework-red" alt="Laravel"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Status-Active-success" alt="Status"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Version-1.0-blue" alt="Version"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-green" alt="License"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚐 About Travel Booking System
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Travel Booking System** adalah aplikasi berbasis web yang dikembangkan untuk mempermudah proses pemesanan kendaraan pariwisata secara digital. Sistem ini mengintegrasikan sisi **frontend (pelanggan)** dan **backend (admin dashboard)** untuk menciptakan proses bisnis yang efisien, terstruktur, dan mudah digunakan.
 
-## Learning Laravel
+Aplikasi ini dirancang untuk membantu perusahaan transportasi dalam mengelola armada dan permintaan perjalanan secara modern dan terpusat.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Key Features
 
-## Laravel Sponsors
+### 🌐 Landing Page
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<p align="center">
+  <img src="dok/homepage.jpeg" width="800">
+</p>
 
-### Premium Partners
+- Hero section dengan Call To Action
+- Informasi keunggulan layanan
+- Preview armada
+- Navigasi responsif
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+### 🚌 Detail Armada
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<p align="center">
+  <img src="dok/detail.jpeg" width="800">
+</p>
 
-## Code of Conduct
+- Gambar armada (slider/carousel)
+- Kapasitas penumpang
+- Fasilitas lengkap
+- Tombol pemesanan langsung
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+### 📝 Formulir Pemesanan
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<p align="center">
+  <img src="dok/pemesanan.jpeg" width="800">
+</p>
 
-## License
+- Input data penyewa
+- Pilihan armada
+- Tanggal & durasi perjalanan
+- Tujuan perjalanan
+- Validasi form
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+### 📊 Trip Request Management (Admin)
+
+<p align="center">
+  <img src="dok/trip_request.jpeg" width="800">
+</p>
+
+- Monitoring permintaan perjalanan
+- Informasi lengkap pelanggan
+- Status pemesanan
+- Fitur pencarian & filter
+
+---
+
+### 🚍 Unit Management (Admin)
+
+<p align="center">
+  <img src="dok/unit.png" width="800">
+</p>
+
+- CRUD data armada
+- Kapasitas dan fasilitas
+- Upload gambar kendaraan
+
+---
+
+## 🧩 Technology Stack
+
+- **Backend**: Laravel  
+- **Frontend**: Blade / Tailwind CSS  
+- **Admin Panel**: Filament  
+- **Database**: MySQL  
+
+---
+
+## 🔄 System Workflow
+
+1. User mengakses website
+2. Memilih armada yang tersedia
+3. Mengisi formulir pemesanan
+4. Data masuk ke dashboard admin
+5. Admin memproses permintaan
+
+---
+
+## 🎯 Purpose
+
+- Digitalisasi sistem pemesanan travel
+- Meningkatkan efisiensi operasional
+- Mengurangi kesalahan manual
+- Meningkatkan pengalaman pengguna
+
+---
+
+## 📁 Documentation Assets
+
+```bash
+dok/
+├── homepage.jpeg
+├── detail.jpeg
+├── pemesanan.jpeg
+├── trip_request.jpeg
+├── unit.png
