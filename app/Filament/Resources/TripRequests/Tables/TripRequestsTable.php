@@ -13,9 +13,11 @@ class TripRequestsTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->poll('3s')
             ->columns([
                 TextColumn::make('nama'),
-                TextColumn::make('no_telepon'),
+                TextColumn::make('no_telepon')
+                ->url(fn ($record) => 'https://wa.me/' . preg_replace('/[^0-9]/', '', $record->no_telepon)),
                 TextColumn::make('unit.model')
                     ->label('Unit')
                     ->searchable()

@@ -28,7 +28,7 @@
             </p>
             <div class="flex flex-wrap gap-4">
                 <a href="#armada" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition">Lihat Armada</a>
-                <a href="#" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-3 rounded-lg font-bold text-lg transition">Cek Promo</a>
+                <!-- <a href="#" class="bg-white hover:bg-gray-100 text-blue-900 px-8 py-3 rounded-lg font-bold text-lg transition">Cek Promo</a> -->
             </div>
         </div>
     </header>

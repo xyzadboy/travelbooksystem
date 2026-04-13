@@ -20,6 +20,7 @@ use Filament\Forms\Components\FileUpload;
 class UnitResource extends Resource
 {
     protected static ?string $model = Unit::class;
+    
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 

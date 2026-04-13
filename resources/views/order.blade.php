@@ -9,9 +9,7 @@
 </head>
 <body class="bg-gray-50 font-sans">
 
-<!-- <x-navbar></x-navbar> -->
-
-    <header class="bg-blue-900 py-12">
+    <header class="bg-blue-900 py-12 flex items-center">
         <div class="max-w-3xl mx-auto px-4 text-center text-white">
             <h1 class="text-3xl md:text-4xl font-bold mb-4">Formulir Pemesanan</h1>
             <p class="text-gray-300">Lengkapi detail perjalanan Anda di bawah ini dan tim kami akan segera menghubungi Anda.</p>
@@ -30,10 +28,27 @@
                             <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
                             <input type="text" name="nama" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Contoh: Budi Santoso" required>
                         </div>
-                        <div>
+                        <!-- <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Nomor WhatsApp</label>
-                            <input type="tel" name="no_telepon" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="0812xxxxxx" required>
-                        </div>
+                            <input type="tel" value="62" oninput="this.value = this.value.replace(/^0/, '62')" name="no_telepon" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="0812xxxxxx" required>
+                        </div> -->
+                     <label class="block text-sm font-medium text-gray-700 mb-1">Nomor WhatsApp</label>
+
+<div class="flex">
+    <span class="inline-flex items-center px-3 bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg text-gray-600">
+        62
+    </span>
+
+    <input 
+        type="tel" 
+        id="phone_input"
+        class="w-full border border-gray-300 rounded-r-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none"
+        placeholder="812xxxxxx"
+        required
+    >
+
+    <input type="hidden" name="no_telepon" id="phone_full">
+</div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
                             <input type="email" name="email" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="anda@email.com">
@@ -68,16 +83,19 @@
                     </div>
                 </div>
 
-                <div class="mt-8">
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Catatan Tambahan (Opsional)</label>
-                    <textarea name="catatan" class="w-full border border-gray-300 rounded-lg p-3 h-32 focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Tulis rute detail atau permintaan khusus di sini..."></textarea>
-                </div>
+                <div class="mt-8 flex justify-between items-center flex-wrap gap-4">
+    
+    <a href="/">
+        <button type="button" class="bg-gray-500 hover:bg-gray-600 text-white px-8 py-3 rounded-lg font-bold text-lg transition shadow-lg">
+            Kembali
+        </button>
+    </a>
 
-                <div class="mt-8 text-right">
-                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition shadow-lg w-full md:w-auto">
-                        Kirim Permintaan Sewa
-                    </button>
-                </div>
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition shadow-lg">
+        Kirim Permintaan Sewa
+    </button>
+
+</div>
             </form>
         </div>
     </section>
@@ -87,6 +105,17 @@
            <p>&copy; 2024 TransWisata Transport Service.</p>
        </div>
     </footer>
+<script>
+document.querySelector('form').addEventListener('submit', function () {
+    let input = document.getElementById('phone_input').value.replace(/[^0-9]/g, '');
 
+    // hilangkan 0 di depan kalau ada
+    if (input.startsWith('0')) {
+        input = input.substring(1);
+    }
+
+    document.getElementById('phone_full').value = '62' + input;
+});
+</script>
 </body>
 </html>

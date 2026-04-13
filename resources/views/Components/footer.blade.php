@@ -17,15 +17,15 @@
             <div>
                 <h4 class="text-lg font-bold mb-6">Hubungi Kami</h4>
                 <ul class="space-y-4 text-gray-400">
-                    <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3"></i> Jl. Pariwisata Raya No. 123, Jakarta Selatan</li>
+                    <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3"></i> Jl. Soekarno-Hatta No. 112, Kalimantan Timur</li>
                     <li class="flex items-center"><i class="fas fa-phone mr-3"></i> (021) 888-999</li>
-                    <li class="flex items-center"><i class="fas fa-envelope mr-3"></i> info@transwisata.com</li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3"></i> <a href="mailto:info@transwisata.com" class="hover:text-white transition">info@transwisata.com</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-lg font-bold mb-6">Ikuti Kami</h4>
                 <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="https://www.instagram.com/vidvlr" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-instagram text-xl"></i></a>
                     <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-facebook text-xl"></i></a>
                     <a href="#" class="w-10 h-10 bg-gray-800 flex items-center justify-center rounded-full hover:bg-blue-600 transition"><i class="fab fa-youtube text-xl"></i></a>
                 </div>
