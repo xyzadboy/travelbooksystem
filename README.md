@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="dok/homepage.jpeg" width="600" alt="Travel Booking System Banner">
-</p>
+
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Laravel-Framework-red" alt="Laravel"></a>
